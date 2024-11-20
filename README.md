@@ -1,8 +1,38 @@
-# React + Vite
+// .gitignore
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# testing
+/coverage
 
-Currently, two official plugins are available:
+# production
+/build
+/dist
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.local
+
+// README.md
+# DUSTUP INDUSTRIAL LTD.
+
+Professional overhead dusting and industrial cleaning services.
+
+## About
+
+We specialize in overhead dusting using scissor lifts and industrial vacuums for cleaning dust from industrial buildings' rafters.
+
+## Website
+
+This repository contains the source code for [dustup.xyz](https://dustup.xyz)
