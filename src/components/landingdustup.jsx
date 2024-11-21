@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
-import { ArrowUpRight, Building2, Phone, ClipboardCheck, MapPin, Wind } from 'lucide-react';
+import React from 'react';
 
-export default function DustupLanding() {
+const landingdustup = () => {
+  return (
+    <div>
+      {/*import React, { useState } from 'react';
+import { ArrowUpRight, Building2, Phone, ClipboardCheck, MapPin, Wind } from 'lucide-react';
+export default function landingdustup() {
   const [activeIntent, setActiveIntent] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -122,3 +126,7 @@ export default function DustupLanding() {
     </div>
   );
 }
+
+export default LandingPage;
+
+
