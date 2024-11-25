@@ -1,7 +1,7 @@
 # dustup we take dust down
-dustup.xyz
-www.dustup.xyz
-https://dustup.xyz
+# dustup.xyz
+# www.dustup.xyz
+# https://dustup.xyz
 
 
 # React + Vite
