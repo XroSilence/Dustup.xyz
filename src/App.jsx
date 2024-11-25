@@ -1,6 +1,15 @@
-import React, { useState } from 'react';
-import { ArrowUpRight, Building2, Phone, ClipboardCheck, MapPin, Wind } from 'lucide-react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import MapComponent from './components/MapComponent'
+import './App.css'
 
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          // import React, { useState } from 'react';
+import { ArrowUpRight, Building2, Phone, ClipboardCheck, MapPin, Wind } from 'lucide-react';
+import { Link } from 'react-router-dom'
 const App = () => {
   const [activeIntent, setActiveIntent] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -37,6 +46,12 @@ const App = () => {
       icon: MapPin,
       customColor: '#69E515',
       hoverColor: '#5ACC13'
+            <Link 
+  to="/service_areas"
+>
+  Service Area
+</Link>
+
     }
   ];
 
@@ -124,3 +139,18 @@ const App = () => {
 };
 
 export default App;
+
+          <div>
+            {/* Keep your existing main page JSX */}
+          </div>
+        } />
+        <Route path="/service_areas" element={<MapComponent />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
+
+
+
