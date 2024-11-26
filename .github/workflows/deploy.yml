@@ -39,7 +39,7 @@ jobs:
         
       - name: Build project
         run: npm run build
-        env: 
+        env: CI
           CI: true  # Treats warnings as errors in CI environment
           
       # Add environment variables if needed
@@ -59,3 +59,8 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
           path: gh-pages
+          
+      - name: Run Publish
+        id: publish
+        uses: actions/publish-pages@v4
+        run: npm run publish
