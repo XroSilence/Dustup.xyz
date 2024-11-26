@@ -40,7 +40,7 @@ jobs:
       - name: Build project
         run: npm run build
         env: CI
-          CI: true  # Treats warnings as errors in CI environment
+        CI: true  # Treats warnings as errors in CI environment
           
       # Add environment variables if needed
       # env:
